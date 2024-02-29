@@ -6,7 +6,7 @@ public class OsumaTauluun : MonoBehaviour
 {
     public Collider ter‰v‰P‰‰;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
 
     void Start()
@@ -21,10 +21,5 @@ public class OsumaTauluun : MonoBehaviour
                 return;
             }
         }
-    }
-
-    void Update()
-    {
-        
     }
 }
