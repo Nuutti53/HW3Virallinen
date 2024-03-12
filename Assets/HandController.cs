@@ -4,6 +4,9 @@ using UnityEngine.InputSystem;
 
 public class HandController : MonoBehaviour {
 
+    SkinnedMeshRenderer mesh;
+    Collider Collider;
+
     //Animation
     public InputActionReference gripInput;
     public InputActionReference triggerInput;
@@ -14,7 +17,6 @@ public class HandController : MonoBehaviour {
 
     //Collider Part
     [SerializeField] private GameObject followObject;
-    [SerializeField] private float followSpeed = 30f;
     [SerializeField] private float rotateSpeed = 100f;
     [SerializeField] private Vector3 positionOffset;
     [SerializeField] private Vector3 rotationOffset;
@@ -24,6 +26,8 @@ public class HandController : MonoBehaviour {
 
     private void Awake() {
         animator = GetComponent<Animator>();
+        mesh = GetComponentInChildren<SkinnedMeshRenderer>();
+        Collider = GetComponentInChildren<Collider>();
 
         //Physics
         _followTarget = followObject.transform;
@@ -55,23 +59,17 @@ public class HandController : MonoBehaviour {
     }
 
     private void PhysicsMove() {
-        //Position
-        var positionWithOffset = _followTarget.position + positionOffset;
-        var distance = Vector3.Distance(positionWithOffset, transform.position);
-        _body.velocity = (_followTarget.position - transform.position).normalized * (followSpeed * distance) * Time.deltaTime;
-
+        _body.position = _followTarget.position;
+ 
         //Rotation
         var rotationWithOffset = _followTarget.rotation * Quaternion.Euler(rotationOffset);
         var q = rotationWithOffset * Quaternion.Inverse(_body.rotation);
         q.ToAngleAxis(out float angle, out Vector3 axis);
         _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed * Time.deltaTime);
+    }
 
-        if (Mathf.Abs(axis.magnitude) != Mathf.Infinity) {
-            if (angle > 180.0f) {
-                angle -= 360.0f;
-                _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed * Time.deltaTime);
-            }
-        }
-
+    public void ToggleVisibilityAndCollision() {
+        mesh.enabled = !mesh.enabled;
+        Collider.enabled = !Collider.enabled;
     }
 }

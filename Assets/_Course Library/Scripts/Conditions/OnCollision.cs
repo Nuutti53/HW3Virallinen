@@ -30,4 +30,8 @@ public class OnCollision : MonoBehaviour
         if (TryGetComponent(out Collider collider))
             collider.isTrigger = false;
     }
+
+    void OnApplicationQuit() {
+        Application.Quit();
+    }
 }

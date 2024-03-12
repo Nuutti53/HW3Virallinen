@@ -198,6 +198,62 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "QUIT",
+            "id": "174cd470-ac6d-43c7-84f1-e9dab287a727",
+            "actions": [
+                {
+                    "name": "QUIT",
+                    "type": "Button",
+                    "id": "46b1f8c7-1bbb-46c0-a34c-c48c1e557752",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "318952e0-4d2b-4c69-b8bd-f6e21ab983ec",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QUIT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Reset Scene",
+            "id": "4e8036a7-2fa7-422c-9b60-841de454b96d",
+            "actions": [
+                {
+                    "name": "Reset Scene",
+                    "type": "Button",
+                    "id": "2ea58e12-25e2-462a-8fa2-9643afb16706",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9c120a51-fedb-48ee-9ae0-14b0c95f4ada",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset Scene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
