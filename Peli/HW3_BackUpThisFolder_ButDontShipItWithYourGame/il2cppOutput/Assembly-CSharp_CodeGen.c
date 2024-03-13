@@ -25,7 +25,8 @@ extern void QUIT_Update_m37A51CE685D1FDD23D75F42B13A8911622B6BCD5 (void);
 extern void QUIT__ctor_m3C64D7CCFA7725B975137045983B864A2855F341 (void);
 extern void U3CU3Ec__cctor_mF68CCDE3CBF4FB32FBDC5A65601DEDD5BED48BE2 (void);
 extern void U3CU3Ec__ctor_mF491F4DEB29D41650B89DD37291BF9A3A2D64FF7 (void);
-extern void U3CU3Ec_U3CStartU3Eb__1_0_mE224128DF399EBAB8A9AF8BF0AEF137A3B490E35 (void);
+extern void U3CU3Ec_U3CStartU3Eb__2_0_m408E93BD8DB712DCD881D9CAEA8A4AA7EA470D11 (void);
+extern void U3CU3Ec_U3CStartU3Eb__2_1_mEC173B3C65B2FD0289AE2346E6179307219423F1 (void);
 extern void ApplyPhysics_Awake_m4CA06875849B0B86A233D0821F13A97D04456D19 (void);
 extern void ApplyPhysics_EnablePhysics_m4D02AF2C95A9E601E2B893DB4D5A5DF3F5C8B163 (void);
 extern void ApplyPhysics_DisablePhysics_m314CA751F38B881E3E92D1EE06F75B73319C07AE (void);
@@ -554,7 +555,7 @@ extern void XRPokeFollowAffordanceFill_OnTransformTweenableVariableUpdated_m8B3C
 extern void XRPokeFollowAffordanceFill_OnPokeStrengthChanged_m480B681A9BE7B6C71724392FC3368A029EA4CED6 (void);
 extern void XRPokeFollowAffordanceFill_OnPokeStateDataUpdated_m6233708D9CEEA9A7920B821FDBD306F4D7CBFAE6 (void);
 extern void XRPokeFollowAffordanceFill__ctor_mAED1746F6E90C5676967671BFBB11E3B7C6B1E98 (void);
-static Il2CppMethodPointer s_methodPointers[556] = 
+static Il2CppMethodPointer s_methodPointers[557] = 
 {
 	HandController_Awake_mD51DA4099D9D53775AA90C6DF692F9DF4641431C,
 	HandController_Update_mD7420626ECC5A2E7D45A63CAC4A2971400371418,
@@ -569,7 +570,8 @@ static Il2CppMethodPointer s_methodPointers[556] =
 	QUIT__ctor_m3C64D7CCFA7725B975137045983B864A2855F341,
 	U3CU3Ec__cctor_mF68CCDE3CBF4FB32FBDC5A65601DEDD5BED48BE2,
 	U3CU3Ec__ctor_mF491F4DEB29D41650B89DD37291BF9A3A2D64FF7,
-	U3CU3Ec_U3CStartU3Eb__1_0_mE224128DF399EBAB8A9AF8BF0AEF137A3B490E35,
+	U3CU3Ec_U3CStartU3Eb__2_0_m408E93BD8DB712DCD881D9CAEA8A4AA7EA470D11,
+	U3CU3Ec_U3CStartU3Eb__2_1_mEC173B3C65B2FD0289AE2346E6179307219423F1,
 	ApplyPhysics_Awake_m4CA06875849B0B86A233D0821F13A97D04456D19,
 	ApplyPhysics_EnablePhysics_m4D02AF2C95A9E601E2B893DB4D5A5DF3F5C8B163,
 	ApplyPhysics_DisablePhysics_m314CA751F38B881E3E92D1EE06F75B73319C07AE,
@@ -1119,12 +1121,12 @@ extern void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F03
 extern void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x06000210, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
-	{ 0x06000211, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
-	{ 0x06000212, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
-	{ 0x06000213, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
+	{ 0x06000211, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
+	{ 0x06000212, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
+	{ 0x06000213, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
+	{ 0x06000214, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[556] = 
+static const int32_t s_InvokerIndices[557] = 
 {
 	8244,
 	8244,
@@ -1137,8 +1139,9 @@ static const int32_t s_InvokerIndices[556] =
 	8244,
 	8244,
 	8244,
-	14462,
+	14463,
 	8244,
+	6694,
 	6694,
 	8244,
 	8244,
@@ -1538,7 +1541,7 @@ static const int32_t s_InvokerIndices[556] =
 	0,
 	0,
 	0,
-	14479,
+	14480,
 	8244,
 	8244,
 	8244,
@@ -1687,8 +1690,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[4] =
 {
 	{ 0x0200004D, { 4, 4 } },
 	{ 0x0200004F, { 12, 4 } },
-	{ 0x06000188, { 0, 4 } },
-	{ 0x06000195, { 8, 4 } },
+	{ 0x06000189, { 0, 4 } },
+	{ 0x06000196, { 8, 4 } },
 };
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1_t4A35DCF146DBECAD94EF8A7387C36F37F0B33F14;
 extern const uint32_t g_rgctx_U3CFadeSequenceU3Ed__6_1__ctor_m3707100E3EBBE4291E194D971B25E3873391043F;
@@ -1729,7 +1732,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	556,
+	557,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
