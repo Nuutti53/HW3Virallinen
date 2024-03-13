@@ -252,6 +252,17 @@
                     "action": "Reset Scene",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12723525-217a-4adf-84d3-5e4921db3723",
+                    "path": "<Keyboard>/#(R)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset Scene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
